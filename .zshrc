@@ -9,6 +9,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias k="kubectl"
 alias kurl="kubectl run curl --rm -it --image=appropriate/curl --restart=Never --command /bin/sh"
+
+KUBE_PS1_SYMBOL_DEFAULT=''
+PROMPT='$(kube_ps1)'$PROMPT
  
 lv() {
   if [ -z "$1" ]; then
