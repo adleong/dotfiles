@@ -2,6 +2,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 plugins=(git history-substring-search kubectl kube-ps1)
 autoload -Uz compinit && compinit
 
@@ -10,7 +13,6 @@ source $ZSH/oh-my-zsh.sh
 alias k="kubectl"
 alias kurl="kubectl run curl --rm -it --image=appropriate/curl --restart=Never --command /bin/sh"
 
-KUBE_PS1_SYMBOL_DEFAULT=''
 PROMPT='$(kube_ps1)'$PROMPT
  
 lv() {
