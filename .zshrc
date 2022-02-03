@@ -23,4 +23,4 @@ lv() {
   fi
 }
 
-/workspace/linkerd2/bin/kind export kubeconfig --name alex
+/workspaces/linkerd2/bin/kind export kubeconfig --name alex
