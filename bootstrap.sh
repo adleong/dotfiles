@@ -36,4 +36,4 @@ cp $DOTFILE_DIR/.gitignore $HOME/.gitignore
 
 cp -rp $DOTFILE_DIR/bin/* $HOME/bin/
 
-k3d kubeconfig merge -d 2>/dev/null || true
+bin/kind export kubeconfig --name alex
