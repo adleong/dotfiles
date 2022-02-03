@@ -31,4 +31,3 @@ cp $DOTFILE_DIR/.zshenv $HOME/.zshenv
 curl -sL https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | zsh
 cp $DOTFILE_DIR/.zshrc $HOME/.zshrc
 
-bin/kind export kubeconfig --name alex

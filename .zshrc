@@ -22,3 +22,5 @@ lv() {
     curl https://run.linkerd.io/install -sL | sh
   fi
 }
+
+/workspace/linkerd2/bin/kind export kubeconfig --name alex
