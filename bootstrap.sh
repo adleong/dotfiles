@@ -25,15 +25,10 @@ git config --global color.diff.whitespace "red reverse"
 
 git config --global alias.co checkout
 
-
 mkdir -p $HOME/bin
 
 cp $DOTFILE_DIR/.zshenv $HOME/.zshenv
 curl -sL https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | zsh
 cp $DOTFILE_DIR/.zshrc $HOME/.zshrc
-
-cp $DOTFILE_DIR/.gitignore $HOME/.gitignore
-
-cp -rp $DOTFILE_DIR/bin/* $HOME/bin/
 
 bin/kind export kubeconfig --name alex
