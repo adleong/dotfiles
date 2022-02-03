@@ -23,6 +23,9 @@ git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
+git config --global alias.co checkout
+
+
 mkdir -p $HOME/bin
 
 cp $DOTFILE_DIR/.zshenv $HOME/.zshenv
