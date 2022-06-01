@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git history-substring-search kubectl kube-ps1)
+plugins=(git history-substring-search kubectl kube-ps1 linkerd)
 autoload -Uz compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
@@ -23,4 +23,6 @@ lv() {
   fi
 }
 
-/workspaces/linkerd2/bin/kind export kubeconfig --name alex
+if command -v /workspaces/linkerd2/bin/kind >/dev/null 2>&1 ; then
+  /workspaces/linkerd2/bin/kind export kubeconfig --name alex
+fi

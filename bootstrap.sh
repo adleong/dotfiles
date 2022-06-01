@@ -36,4 +36,5 @@ mkdir -p $HOME/bin
 cp $DOTFILE_DIR/.zshenv $HOME/.zshenv
 curl -sL https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | zsh
 cp $DOTFILE_DIR/.zshrc $HOME/.zshrc
+cp -r "$DOTFILE_DIR"/omz/plugins/* "$HOME"/.oh-my-zsh/custom/plugins/
 
