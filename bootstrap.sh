@@ -7,14 +7,10 @@ DOTFILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &>/dev/null && pwd )"
 sudo apt install -y less vim zsh exa bat
 wget https://dl.step.sm/gh-release/cli/docs-cli-install/v0.18.0/step-cli_0.18.0_amd64.deb
 sudo dpkg -i step-cli_0.18.0_amd64.deb
-sudo npm install -g fx
-sudo npm install -g diff-so-fancy
 
 git config --global user.email "alex@buoyant.io"
 git config --global user.name "Alex Leong"
 
-git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-git config --global interactive.diffFilter "diff-so-fancy --patch"
 git config --global color.diff-highlight.oldNormal    "red bold"
 git config --global color.diff-highlight.oldHighlight "red bold 52"
 git config --global color.diff-highlight.newNormal    "green bold"
