@@ -4,6 +4,7 @@ set -eux
 
 DOTFILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &>/dev/null && pwd )"
 
+sudo apt update
 sudo apt install -y less vim zsh exa bat
 wget https://dl.step.sm/gh-release/cli/docs-cli-install/v0.18.0/step-cli_0.18.0_amd64.deb
 sudo dpkg -i step-cli_0.18.0_amd64.deb
