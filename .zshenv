@@ -10,4 +10,4 @@ export TZ=UTC
 export LESSCHARSET=utf-8
 
 export PATH="$HOME/bin:$PATH"
-
+export PATH="$HOME/.linkerd2/bin:$PATH"
