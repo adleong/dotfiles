@@ -4,10 +4,6 @@ set -eux
 
 DOTFILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &>/dev/null && pwd )"
 
-sudo apt update
-sudo apt install -y less vim zsh exa bat
-curl -LO https://dl.step.sm/gh-release/cli/docs-cli-install/v0.18.0/step-cli_0.18.0_amd64.deb
-sudo dpkg -i step-cli_0.18.0_amd64.deb
 
 git config --global user.email "alex@buoyant.io"
 git config --global user.name "Alex Leong"
@@ -27,6 +23,8 @@ git config --global color.diff.whitespace "red reverse"
 
 git config --global alias.co checkout
 git config --global alias.pr '!pr(){ git fetch origin pull/$1/head:pr-$1; git checkout pr-$1; };pr'
+
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 
 mkdir -p $HOME/bin
 
